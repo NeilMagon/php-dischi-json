@@ -20,8 +20,25 @@
                 </div>
             </nav>
         </header>
+        <main>
+            <div class="container my-5">
+                <div class="row g-5">
+                    <div v-for="disc in discs" class="col-4">
+                        <div class="card align-items-center py-5">
+                            <div class="ms-img-container pb-3">
+                                <img :src="disc.poster"  :alt="disc.title">
+                            </div>
+                            <div class="card-body text-center text-light">
+                                <h5 class="card-title">{{ disc.title }}</h5>
+                                <small>{{ disc.author }}</small>
+                                <div>{{ disc.year }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

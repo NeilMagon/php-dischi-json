@@ -3,19 +3,19 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            cards: [],
+            discs: [],
         };
     },
     methods: {
-        getCardsFromApi(){
+        getDiscFromApi(){
             axios.get('server.php').
             then((response) => {
-                this.cards = response.data;
+                this.discs = response.data;
             });
         }
         },
         mounted() {
-            this.getCardsFromApi();
+            this.getDiscFromApi();
         },
     },
 ).mount('#app');

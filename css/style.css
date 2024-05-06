@@ -3,8 +3,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #1d2d3c;
+}
+
+.row .card {
+    background-color: #112030;
+    cursor: pointer;
+}
+
 img{
     width: 100%;
+}
+
+.ms-img-container{
+    max-width: 50%;
 }
 
 nav{
