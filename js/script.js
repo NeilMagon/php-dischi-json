@@ -8,8 +8,8 @@ createApp({
     },
     methods: {
         getDiscFromApi(){
-            axios.get('server.php').
-            then((response) => {
+            axios.get('server.php')
+            .then((response) => {
                 this.discs = response.data;
             });
         }

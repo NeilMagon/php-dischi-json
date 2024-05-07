@@ -46,7 +46,6 @@
     $disc_json = file_get_contents('dischi.json');
     $disc = json_decode($disc_json, true);
 
-    // Di default stampiamo tutti gli studenti
     $discs = $disc;
     header('Content-Type: application/json');
     echo json_encode($discs);
